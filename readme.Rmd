@@ -1,9 +1,8 @@
 Getting and Cleaning Data - Project
----
-title: "readme"
+
 author: "raho73"
 date: "11 August 2017"
----
+
 Source data
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
@@ -15,9 +14,13 @@ https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-dat
 
 Required steps
 - set a separate work directory if desired
+- packages dplyr and data.table are required (installation can be uncommented in script)
 - load run_analysis.R
   - it downloads and unzip the data into sub directory "UCI HAR Dataset" called src_dir
-  - it combines the tables of /test and /train data with the rearding activity name
+  - it combines the tables of /test and /train data with the regarding activity name
   - it removes all activities without mean or standard deviation values
   - it removes the () of the Labels
   - if desired the option round can be uncommented
+    - will create the file rounded_data_means_std.txt
+  - the output is written to 
+    - data_means_std.txt
