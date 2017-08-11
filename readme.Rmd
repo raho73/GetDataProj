@@ -1,7 +1,7 @@
 Getting and Cleaning Data - Project
 
-author: "raho73"
-date: "11 August 2017"
+author: raho73
+date  : 11.08.2017
 
 Source data
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -24,3 +24,5 @@ Required steps
     - will create the file rounded_data_means_std.txt
   - the output is written to 
     - data_means_std.txt
+  - aggregate means after activity, sub
+    - agg_activity_sub_mean.txt

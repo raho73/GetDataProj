@@ -63,6 +63,5 @@
   write.table(trte, "data_means_std.txt")
   
   
-  
-summarise(group_by(trte, sub, activity),
-          mean=mean(value), sd=sd(value))
+  #aggregate by activity, sub, showing average
+  write.table(aggregate(trte[, 3:length(trte)], list(trte$activity,trte$sub), mean), "agg_activity_sub_mean.txt")
