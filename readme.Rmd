@@ -1,5 +1,23 @@
+Getting and Cleaning Data - Project
 ---
 title: "readme"
 author: "raho73"
-date: "10 August 2017"
+date: "11 August 2017"
 ---
+Source data
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Data used for Project
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Description of Goals
+https://www.coursera.org/learn/data-cleaning/peer/FIZtT/getting-and-cleaning-data-course-project
+
+Required steps
+- set a separate work directory if desired
+- load run_analysis.R
+  - it downloads and unzip the data into sub directory "UCI HAR Dataset" called src_dir
+  - it combines the tables of /test and /train data with the rearding activity name
+  - it removes all activities without mean or standard deviation values
+  - it removes the () of the Labels
+  - if desired the option round can be uncommented
